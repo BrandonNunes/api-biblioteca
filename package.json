@@ -1,0 +1,35 @@
+{
+  "name": "api-biblioteca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "migrate": "npx sequelize-cli db:migrate",
+    "undu": "npx sequelize-cli db:migrate:undu",
+    "start": "tsc && node dist/index.js",
+    "dev": "nodemon  --exec ts-node src/index.ts"
+  },
+  "keywords": [
+    "api",
+    "biblioteca"
+  ],
+  "author": "Brandon Nunes",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "nodemon": "^2.0.19",
+    "prettier": "2.7.1",
+    "sequelize-cli": "^6.4.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.3"
+  }
+}
